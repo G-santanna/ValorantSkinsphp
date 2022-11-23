@@ -1,0 +1,51 @@
+@font-face {
+    font-family: Valorant;
+    src: url(font/Valorant\ Font.ttf);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: 0;
+    font-family: Valorant;
+}
+li{
+    list-style: none;
+    justify-content: space-between;
+    margin: 15px;
+    font-size: 25px;
+}
+ul{
+    display: flex;
+    justify-content: center;
+}
+a{
+    text-decoration: none;
+    color: #0f1822;
+}
+p{
+    color: #0f1822; 
+}
+body{
+    background-color: #ebe6e0;
+}
+.box div{
+    width: 30%;
+    padding: 10px;
+}
+.box div p{
+    text-align: center;
+}
+.box{
+    margin: 10px;
+    display: flex;
+}
+.skinimg{
+    width: 100%;
+    height: 100%;
+}
+fieldset{
+    border: solid #0f1822 5px;
+    width: 30%;
+    padding: 10px;
+}
