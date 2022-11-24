@@ -78,6 +78,34 @@ body{
     border: #0f1822 solid 1px;
     border-radius: 4px;
 }
+.formlogin{
+    display: block;
+    height: 400px;
+    text-align: center;
+    padding-top: 5px;
+    background-color: #ebe6e0;
+}
+.formlogin p{
+    padding-top: 45px;
+}
+.formlogin input[type='text']{
+    border: #0f1822 solid 1px;
+    border-radius: 4px;
+}
+.formlogin input[type='password']{
+    border: #0f1822 solid 1px;
+    border-radius: 4px;
+}
+.formlogin input[type='submit']{
+    border: #0f1822 solid 2px;
+    border-radius: 4px;
+    width: 75px;
+    height: 25px;
+}
+.formlogin input[type='number']{
+    border: #0f1822 solid 1px;
+    border-radius: 4px;
+}
 fieldset{
     border: solid #0f1822 5px;
     border-radius: 5px;

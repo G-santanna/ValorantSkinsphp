@@ -17,6 +17,21 @@ include('menu.php');
     </style>
 </head>
 <body>
-    
+   <?php  
+        if(!isset($_SESSION['login']) || $_SESSION['login'] != true){
+            echo "<fieldset id=quadro>
+            <legend>Entrar</legend>
+            <form class=formlogin action=login.act.php method=post enctype=multipart/form-data>
+            <p>Email:    <input type=text name=email></p>
+            <p>Senha:    <input type=password name=senha></p>
+            <p><input type=submit id=botão value=Entrar></p>
+            </form>
+            
+
+            
+            </fieldset>
+            ?>";
+        } 
+        ?>
 </body>
 </html>

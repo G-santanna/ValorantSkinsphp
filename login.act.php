@@ -11,7 +11,7 @@
         if($senha === $login['senha']){
             $_SESSION['login'] = true;
             $_SESSION['nome'] = $login['nome'];
-            $target = "location:list_skins.php";
+            $target = "location:home.php";
         }else{
             $target = "location:login.php";
             $msg = "Email ou senha inválidos";
