@@ -42,10 +42,52 @@ body{
 }
 .skinimg{
     width: 100%;
-    height: 100%;
+    height: 170px;
+}
+.colabimg p img{
+    margin-left: 100%;
+    border: #0f1822 solid 3px;
+    border-radius: 4px;
+    width: 230px;
+    height: 170px;
+}
+.formcad{
+    display: block;
+    height: 400px;
+    text-align: center;
+    padding-top: 5px;
+}
+.formcad p{
+    padding-top: 45px;
+}
+.formcad input[type='text']{
+    border: #0f1822 solid 1px;
+    border-radius: 4px;
+}
+.formcad input[type='password']{
+    border: #0f1822 solid 1px;
+    border-radius: 4px;
+}
+.formcad input[type='submit']{
+    border: #0f1822 solid 2px;
+    border-radius: 4px;
+    width: 75px;
+    height: 25px;
+}
+.formcad input[type='number']{
+    border: #0f1822 solid 1px;
+    border-radius: 4px;
 }
 fieldset{
     border: solid #0f1822 5px;
+    border-radius: 5px;
     width: 30%;
-    padding: 10px;
+    margin-left: 33%;  
+    margin-top: 150px;  
+}
+legend{
+    text-align: center;
+    color: #0f1822;
+    padding-left: 4px;
+    padding-right: 4px;
 }

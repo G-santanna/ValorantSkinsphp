@@ -24,7 +24,7 @@ include('menu.php');
         while($admin = mysqli_fetch_array($admins)){
         echo "<div><p> Nome: $admin[nome]</p>";
         echo "<p>Email: $admin[email]</p>";
-        echo "<p><img src=$admin[imagem]></p>";
+        echo "<div class = colabimg> <p><img src=$admin[imagem]></p> </div>";
         if(!isset($_SESSION['login']) || $_SESSION['login'] != true){
             echo "</div>";
         }else{
