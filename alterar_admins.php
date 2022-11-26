@@ -1,5 +1,6 @@
 <?php
 require('sec.php');
+include('menu.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -18,24 +19,23 @@ require('sec.php');
     ?>
 
     <fieldset id="quadro_cad">
-    <legend>Alteração de administradores</legend>
+    <legend>Alteracao de administradores</legend>
     
-    <form class="formcad" action="alterar_admins.act.php" method="post" enctype="multipart/form-data">
+    <form class="formalt" action="alterar_admins.act.php" method="post" enctype="multipart/form-data">
     <p><input type="hidden" name="codigo" value="<?php echo $admin['codigo']?>"></p>
     <p><input type="hidden" name="foto_anterior" value="<?php echo $admin['imagem']?>"></p>
-    <p>Nome: <input type="text" name="nome" value="<?php echo $admin['nome']?>"></p>
-    <p>Email: <input type="text" name="email" value="<?php echo $admin['email']?>"></p>
-    <p>Imagem: <input type="file" name="imagem"></p>
-    <p><input type="submit" id="botao" value="Salvar"></p>
-    </form>
-
+    <p id="altinput">Nome: <input type="text" name="nome" value="<?php echo $admin['nome']?>"></p>
+    <p id="altinput">Email: <input type="text" name="email" value="<?php echo $admin['email']?>"></p>
+    <p id="altinput">Imagem: <input type="file" name="imagem"></p>
+    <p id="altinput"><input type="submit" id="botao" value="Salvar"></p>
+    
     <?php
         if(isset($_SESSION['msg'])){
             echo $_SESSION['msg'];
             unset($_SESSION['msg']);
         }
     ?>
-
+    </form>
     </fieldset>
 
 </body>

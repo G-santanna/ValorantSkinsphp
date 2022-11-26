@@ -14,11 +14,11 @@
             $target = "location:home.php";
         }else{
             $target = "location:login.php";
-            $msg = "Email ou senha inválidos";
+            $msg = "Email ou senha invalidos";
         }
     }else{
         $target = "location:login.php";
-        $msg = "Email ou senha inválidos";
+        $msg = "Email ou senha invalidos";
     }
 
     $_SESSION['msg'] = $msg;

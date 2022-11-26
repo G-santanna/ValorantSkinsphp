@@ -26,9 +26,6 @@ include('menu.php');
             <p>Senha:    <input type=password name=senha></p>
             <p><input type=submit id=botão value=Entrar></p>
             </form>
-            
-
-            
             </fieldset>
             ?>";
         } 

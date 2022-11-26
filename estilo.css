@@ -27,31 +27,62 @@ p{
     color: #0f1822; 
 }
 body{
+    background-image: url(imagens/Valorant);
+    background-repeat: no-repeat;
+    background-size: cover;
     background-color: #ebe6e0;
-}
-.box div{
-    width: 30%;
-    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
 }
 .box div p{
     text-align: center;
 }
 .box{
-    margin: 10px;
+    /* margin: 20px; */
     display: flex;
-}
-.skinimg{
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* background-color: blue; */
     width: 100%;
-    height: 170px;
 }
-.colabimg p img{
-    margin-left: 100%;
-    border: #0f1822 solid 3px;
-    border-radius: 4px;
-    width: 230px;
-    height: 170px;
+.sc{
+    background-color: #ebe6e0;
+    font-size: 20px;
+    display: flex;
+    width: 350px;
+    margin-top: 100px;
+    margin: 30px;
+    position: relative;
+    /* background-color: #ff00ea; */
+    text-align: center;
+    flex-direction: column;
+    border: #0f1822 solid 10px;
+    border-radius: 15px;
+}
+.sc p{
+    padding: 15px;
+}
+#pagimg{
+    height: 150px;
+    margin: 15px;
+}
+#pagimg img{
+    width: 256px;
+    height: 74px;
+}
+.listmsg{
+    margin-top: 10px;
+    text-align: center;
+}
+#pagimgadm img{
+    width: 200px;
+    height: 200px;
 }
 .formcad{
+    background-color: #ebe6e0;
     display: block;
     height: 400px;
     text-align: center;
@@ -79,6 +110,7 @@ body{
     border-radius: 4px;
 }
 .formlogin{
+    background-color: #ebe6e0;
     display: block;
     height: 400px;
     text-align: center;
@@ -103,6 +135,34 @@ body{
     height: 25px;
 }
 .formlogin input[type='number']{
+    border: #0f1822 solid 1px;
+    border-radius: 4px;
+}
+.formalt{
+    background-color: #ebe6e0;
+    display: block;
+    height: 400px;
+    text-align: center;
+    padding-top: 5px;
+}
+#altinput{
+    padding-top: 45px;
+}
+.formalt input[type='text']{
+    border: #0f1822 solid 1px;
+    border-radius: 4px;
+}
+.formalt input[type='password']{
+    border: #0f1822 solid 1px;
+    border-radius: 4px;
+}
+.formalt input[type='submit']{
+    border: #0f1822 solid 2px;
+    border-radius: 4px;
+    width: 75px;
+    height: 25px;
+}
+.formalt input[type='number']{
     border: #0f1822 solid 1px;
     border-radius: 4px;
 }

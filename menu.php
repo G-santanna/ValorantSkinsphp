@@ -17,7 +17,7 @@
 </head>
 <body>
     <ul>
-        <li><a id="linkmenu" href="home.php">HOME</a></li>
+        <li><a id="linkmenu" href="login.php">HOME</a></li>
         <li><a id="linkmenu" href="list_skins.php">SKINS</a></li>
         <li><a id="linkmenu" href="list_admins.php">COLABORADORES</a></li>
         <li><a id="linkmenu" href="cad_skins.php">CADASTRAR SKINS</a></li>
@@ -26,7 +26,7 @@
         <?php 
         @session_start();
         if(!isset($_SESSION['login']) || $_SESSION['login'] != true){
-            echo "<li><a id=linkmenu href=home.php>LOGIN</a></li>";
+            echo "<li><a id=linkmenu href=login.php>LOGIN</a></li>";
         }else{
             echo "<li><a id=linkmenu href=logout.php>$_SESSION[nome]</a></li>";
         }

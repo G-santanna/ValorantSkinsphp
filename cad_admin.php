@@ -20,7 +20,7 @@ require('sec.php');
     <p>Senha: <input type="password" name="senha"></p>
     <p>Foto: <input type="file" name="imagem"></p>
     <p><input type="submit" id="botao" value="Salvar"></p>
-    </form>
+    
 
     <?php
         if(isset($_SESSION['msg'])){
@@ -28,7 +28,7 @@ require('sec.php');
             unset($_SESSION['msg']);
         }
     ?>
-
+    </form>
     </fieldset>
 
 </body>

@@ -1,5 +1,6 @@
 <?php
 require('sec.php');
+include('menu.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -18,17 +19,17 @@ require('sec.php');
     ?>
 
     <fieldset id="quadro_cad">
-    <legend>Alteração de itens</legend>
+    <legend>Alteracao de itens</legend>
     
-    <form class="formcad" action="alterar.act.php" method="post" enctype="multipart/form-data">
+    <form class="formalt" action="alterar.act.php" method="post" enctype="multipart/form-data">
     <p><input type="hidden" name="codigo" value="<?php echo $skin['codigo']?>"></p>
     <p><input type="hidden" name="foto_anterior" value="<?php echo $skin['imagem']?>"></p>
-    <p>Arma: <input type="text" name="arma" value="<?php echo $skin['arma']?>"></p>
-    <p>Bundle: <input type="text" name="bundle" value="<?php echo $skin['bundle']?>"></p>
-    <p>Valorant Points: <input type="number" name="preco" value="<?php echo $skin['preco']?>"></p>
-    <p>Imagem: <input type="file" name="imagem"></p>
-    <p><input type="submit" id="botao" value="Salvar"></p>
-    </form>
+    <p id="altinput">Arma: <input type="text" name="arma" value="<?php echo $skin['arma']?>"></p>
+    <p id="altinput">Bundle: <input type="text" name="bundle" value="<?php echo $skin['bundle']?>"></p>
+    <p id="altinput">Valorant Points: <input type="number" name="preco" value="<?php echo $skin['preco']?>"></p>
+    <p id="altinput">Imagem: <input type="file" name="imagem"></p>
+    <p id="altinput"><input type="submit" id="botao" value="Salvar"></p>
+    
 
     <?php
         if(isset($_SESSION['msg'])){
@@ -36,7 +37,7 @@ require('sec.php');
             unset($_SESSION['msg']);
         }
     ?>
-
+    </form>
     </fieldset>
 
 </body>

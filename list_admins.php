@@ -10,29 +10,32 @@ include('menu.php');
     <title>Lista de Admins</title>
 </head>
 <body>
+    <div class="listmsg">
     <?php
         if(isset($_SESSION['msg'])){
             echo $_SESSION['msg'];
             unset($_SESSION['msg']);
         }
     ?>
-
+    </div>
     <?php
         require('connect.php');
-        $admins = mysqli_query($con, "select * from `tb_admin`");
+        $admins = mysqli_query($con, "select * from `tb_admin` order by `nome`");
         echo "<div class = box>";
         while($admin = mysqli_fetch_array($admins)){
-        echo "<div><p> Nome: $admin[nome]</p>";
-        echo "<p>Email: $admin[email]</p>";
-        echo "<div class = colabimg> <p><img src=$admin[imagem]></p> </div>";
+        echo "<div class =\"sc\">";
+        echo "<p id = pag>$admin[nome]</p>";
+        echo "<p id = pag>$admin[email]</p>";
+        echo "<p id = pagimgadm><img src=$admin[imagem]></p>";
         if(!isset($_SESSION['login']) || $_SESSION['login'] != true){
-            echo "</div>";
+
         }else{
             echo"<p><a href=alterar_admins.php?cod=$admin[codigo]>Alterar</a></p>";
-            echo"<p><a href=javascript:confirmar($admin[codigo])>Excluir</a></p></div>";
+            echo"<p><a href=javascript:confirmar($admin[codigo])>Excluir</a></p>";
         }
-
+        echo "</div>";
         }
+        echo "</div>";
     ?>
     <script>
         function confirmar(codigo){

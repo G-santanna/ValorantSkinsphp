@@ -21,7 +21,7 @@ require('sec.php');
     <p>Valorant Points: <input type="number" name="preco"></p>
     <p>Imagem: <input type="file" name="imagem"></p>
     <p><input type="submit" id="botao" value="Salvar"></p>
-    </form>
+    
 
     <?php
         if(isset($_SESSION['msg'])){
@@ -29,7 +29,7 @@ require('sec.php');
             unset($_SESSION['msg']);
         }
     ?>
-
+    </form>
     </fieldset>
 
 </body>
