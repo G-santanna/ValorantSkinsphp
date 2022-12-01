@@ -12,5 +12,5 @@
     @session_start();
     $_SESSION['msg'] = $msg;
 
-    header("location: list_skins.php");
+    header("location: list_admins.php");
 ?>

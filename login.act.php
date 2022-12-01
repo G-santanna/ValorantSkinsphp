@@ -11,7 +11,8 @@
         if($senha === $login['senha']){
             $_SESSION['login'] = true;
             $_SESSION['nome'] = $login['nome'];
-            $target = "location:home.php";
+            $_SESSION['codigo'] = $login['codigo'];
+            $target = "location:login.php";
         }else{
             $target = "location:login.php";
             $msg = "Email ou senha invalidos";

@@ -23,15 +23,17 @@ include('menu.php');
         $admins = mysqli_query($con, "select * from `tb_admin` order by `nome`");
         echo "<div class = box>";
         while($admin = mysqli_fetch_array($admins)){
-        echo "<div class =\"sc\">";
+        echo "<div class =\"scadm\">";
         echo "<p id = pag>$admin[nome]</p>";
         echo "<p id = pag>$admin[email]</p>";
         echo "<p id = pagimgadm><img src=$admin[imagem]></p>";
         if(!isset($_SESSION['login']) || $_SESSION['login'] != true){
 
         }else{
+            if($_SESSION['codigo']==$admin['codigo']){
             echo"<p><a href=alterar_admins.php?cod=$admin[codigo]>Alterar</a></p>";
             echo"<p><a href=javascript:confirmar($admin[codigo])>Excluir</a></p>";
+            }
         }
         echo "</div>";
         }

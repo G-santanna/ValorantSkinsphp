@@ -26,6 +26,8 @@ include('menu.php');
     <p><input type="hidden" name="foto_anterior" value="<?php echo $admin['imagem']?>"></p>
     <p id="altinput">Nome: <input type="text" name="nome" value="<?php echo $admin['nome']?>"></p>
     <p id="altinput">Email: <input type="text" name="email" value="<?php echo $admin['email']?>"></p>
+    <p id="altinput">Digite sua senha atual: <input type="password" name="senhaOld"></p>
+    <p id="altinput">Digite sua nova senha: <input type="password" name="senhaNew"></p>
     <p id="altinput">Imagem: <input type="file" name="imagem"></p>
     <p id="altinput"><input type="submit" id="botao" value="Salvar"></p>
     

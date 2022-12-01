@@ -8,6 +8,7 @@
     box-sizing: border-box;
     border: 0;
     font-family: Valorant;
+    overflow-x: hidden;
 }
 li{
     list-style: none;
@@ -50,9 +51,30 @@ body{
 }
 .sc{
     background-color: #ebe6e0;
+    font-size: 23px;
+    display: flex;
+    width: 350px;
+    height: 360px;
+    margin-top: 100px;
+    margin: 30px;
+    position: relative;
+    /* background-color: #ff00ea; */
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    border: #0f1822 solid 10px;
+    border-radius: 15px;
+}
+.sc p{
+    padding: 5px;
+}
+.scadm{
+    background-color: #ebe6e0;
     font-size: 20px;
     display: flex;
     width: 350px;
+    height: 466px;
     margin-top: 100px;
     margin: 30px;
     position: relative;
@@ -62,16 +84,25 @@ body{
     border: #0f1822 solid 10px;
     border-radius: 15px;
 }
-.sc p{
+.scadm p{
     padding: 15px;
 }
+.scadm img{
+    border: #0f1822 double 10px;
+    border-radius: 5px;
+}
 #pagimg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
     height: 150px;
     margin: 15px;
 }
 #pagimg img{
-    width: 256px;
-    height: 74px;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 3px;
 }
 .listmsg{
     margin-top: 10px;
