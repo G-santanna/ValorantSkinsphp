@@ -40,13 +40,11 @@ body{
     text-align: center;
 }
 .box{
-    /* margin: 20px; */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     position: relative;
-    /* background-color: blue; */
     width: 100%;
 }
 .sc{
@@ -58,7 +56,6 @@ body{
     margin-top: 100px;
     margin: 30px;
     position: relative;
-    /* background-color: #ff00ea; */
     text-align: center;
     align-items: center;
     justify-content: space-between;
@@ -68,6 +65,7 @@ body{
 }
 .sc p{
     padding: 5px;
+    overflow-y: hidden;
 }
 .scadm{
     background-color: #ebe6e0;
@@ -78,7 +76,6 @@ body{
     margin-top: 100px;
     margin: 30px;
     position: relative;
-    /* background-color: #ff00ea; */
     text-align: center;
     flex-direction: column;
     border: #0f1822 solid 10px;
