@@ -17,6 +17,12 @@
 </head>
 <body>
     <ul>
+        <?php @session_start(); 
+        if(!isset($_SESSION['login']) || $_SESSION['login'] != true){
+        }else{
+            echo "<li><p id=linkmenu>$_SESSION[nome]</p></li>";
+        }
+        ?>
         <li><a id="linkmenu" href="login.php">HOME</a></li>
         <li><a id="linkmenu" href="list_skins.php">SKINS</a></li>
         <li><a id="linkmenu" href="list_admins.php">COLABORADORES</a></li>
@@ -24,11 +30,10 @@
         <li><a id="linkmenu" href="cad_admin.php">CADASTRAR ADMIN</a></li>
         <li><a id="linkmenu" href="pesquisa.php">PESQUISAR</a></li>
         <?php 
-        @session_start();
         if(!isset($_SESSION['login']) || $_SESSION['login'] != true){
-            echo "<li><a id=linkmenu href=login.php>LOGIN</a></li>";
+            echo "<li><a id=linkmenu href=login.php>ENTRAR</a></li>";
         }else{
-            echo "<li><a id=linkmenu href=logout.php>$_SESSION[nome]</a></li>";
+            echo "<li><a id=linkmenu href=logout.php>SAIR</a></li>";
         }
         ?>
     </ul>
